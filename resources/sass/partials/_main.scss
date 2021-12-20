@@ -1,0 +1,44 @@
+.hero{
+    background-image: url("/images/jumbotron.jpg");
+    background-position: top;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.card-container{
+    padding-bottom: 40px;
+}
+
+.img-container{
+    height: 200px;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+    }
+}
+
+.my-btn-primary{
+    background-color: $primary-color;
+    color: white;
+    padding: 5px 40px;
+    font-weight: bold;
+}
+
+.main-links-container{
+    background-color: $primary-color;
+
+    .main-row-link{
+        padding-left: 7.5px;
+        height: 70px;
+    }
+
+    col{
+        padding: 0;
+    }
+
+    img{
+        height: 100%;
+        padding-right: 15px;
+    }
+}

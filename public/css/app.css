@@ -1,0 +1,101 @@
+.before-navbar {
+  background-color: #0282f9;
+}
+
+.search-container {
+  border-bottom: 3px solid #0282f9;
+}
+
+.hero {
+  background-image: url("/images/jumbotron.jpg");
+  background-position: top;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.card-container {
+  padding-bottom: 40px;
+}
+
+.img-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.my-btn-primary {
+  background-color: #0282f9;
+  color: white;
+  padding: 5px 40px;
+  font-weight: bold;
+}
+
+.main-links-container {
+  background-color: #0282f9;
+}
+
+.main-links-container .main-row-link {
+  padding-left: 7.5px;
+  height: 70px;
+}
+
+.main-links-container col {
+  padding: 0;
+}
+
+.main-links-container img {
+  height: 100%;
+  padding-right: 15px;
+}
+
+footer {
+  background-image: url("/images/footer-bg.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+footer .container-fluid {
+  overflow: hidden;
+}
+
+footer .after-footer {
+  background-color: #303030;
+}
+
+footer .relative {
+  position: relative;
+}
+
+footer .dc-logo-container {
+  text-align: right;
+  width: 50%;
+}
+
+footer .dc-logo-container img {
+  position: absolute;
+  top: -75px;
+  transform: scale(1.3);
+}
+
+footer .footer-logo {
+  height: 100%;
+  background-image: url("/images/dc-logo-bg.png");
+  background-size: 110%;
+  background-position: center;
+  background-size: cover;
+}
+
+footer .btn-footer {
+  border: 3px solid #0282f9;
+  display: inline-block;
+  padding: 15px;
+  background: none;
+}
+
+footer h3 {
+  color: #0282f9;
+}
+
