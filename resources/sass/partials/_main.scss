@@ -15,6 +15,8 @@
 
     img{
         width: 100%;
+        object-fit: cover;
+        object-position: top;
     }
 }
 
@@ -40,5 +42,54 @@
     img{
         height: 100%;
         padding-right: 15px;
+    }
+}
+
+.my-bg-primary{
+    background-color: $primary-color;
+}
+
+.bg-green{
+    background-color: #55ba59;
+}
+
+.details-container{
+    background-color: #f6f6f6;
+}
+
+main{
+    .container{
+        position: relative;
+
+        
+        .tag-container{
+            background-color: $primary-color;
+            position: absolute;
+            top: -20px;
+            left: 0; 
+        }
+        
+        .img-novel-container{
+            position: absolute;
+            top: -360px;
+            left: 0;
+
+            border: 1px solid white;
+            
+            .series-tag{
+                background-color: #00a9d9;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            .gallery-tag{
+                background-color: #00a9d9;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
     }
 }

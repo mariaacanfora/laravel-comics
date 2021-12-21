@@ -24,6 +24,10 @@
 
 .img-container img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .my-btn-primary {
@@ -49,6 +53,50 @@
 .main-links-container img {
   height: 100%;
   padding-right: 15px;
+}
+
+.my-bg-primary {
+  background-color: #0282f9;
+}
+
+.bg-green {
+  background-color: #55ba59;
+}
+
+.details-container {
+  background-color: #f6f6f6;
+}
+
+main .container {
+  position: relative;
+}
+
+main .container .tag-container {
+  background-color: #0282f9;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+main .container .img-novel-container {
+  position: absolute;
+  top: -360px;
+  left: 0;
+  border: 1px solid white;
+}
+
+main .container .img-novel-container .series-tag {
+  background-color: #00a9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .container .img-novel-container .gallery-tag {
+  background-color: #00a9d9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 footer {
