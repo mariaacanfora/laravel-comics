@@ -1,3 +1,9 @@
+@php
+    $route_name = Request::route()->getName();
+
+@endphp
+
+
 <header>
     <div class="before-navbar text-end">
         <div class="container">
@@ -13,8 +19,13 @@
 
             <ul class="m-0">
                 @foreach($nav_links as $link)
+                    @php
+                        $prefix = explode(".", $link["route_name"])[0];
+                        $active = strpos($route_name, $prefix) === 0;
+                    @endphp
+
                 <li class="d-inline-block">
-                    <a href="{{route($link["route_name"])}}" class="text-decoration-none text-dark d-inline-block px-2">{{$link["text"]}}</a>
+                    <a href="{{route($link["route_name"])}}" class="text-decoration-none text-dark d-inline-block px-2 {{$active ? 'active' : '' }}">{{$link["text"]}}</a>
                 </li>
                 @endforeach
             </ul>

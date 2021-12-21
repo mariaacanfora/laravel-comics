@@ -6,6 +6,10 @@
   border-bottom: 3px solid #0282f9;
 }
 
+.active {
+  border-bottom: 3px solid #0282f9;
+}
+
 .hero {
   background-image: url("/images/jumbotron.jpg");
   background-position: top;
