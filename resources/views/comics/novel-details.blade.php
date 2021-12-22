@@ -23,7 +23,7 @@
                     <div class="text-center border-start p-3"><a href="#" class="text-light text-decoration-none">Check Availability</a></div>
                 </div>
 
-                <p>{{$novel["details"]}}</p>
+                <p>{{$novel["description"]}}</p>
             </div>
 
             <div class="col-3">
@@ -40,12 +40,20 @@
                     <h3 class="pb-4 border-bottom">Talent</h3>
                     <div class="d-flex justify-content-between border-bottom">
                         <span class="me-auto">Art by:</span>
-                        <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis iusto id ipsum fuga accusantium commodi labore saepe modi, unde reprehenderit, nisi molestiae aperiam nostrum ipsa debitis, quam ipsam alias.</p>
+                        <div class="w-75">
+                            @foreach($novel["artists"] as $key => $artist)
+                                <a href="#">{{$artist}}</a>
+                            @endforeach
+                        </div>
                     </div>
 
                     <div class="d-flex justify-content-between border-bottom">
                         <span class="me-auto">Written by:</span>
-                        <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque blanditiis iusto id ipsum fuga accusantium commodi labore saepe modi, unde reprehenderit, nisi molestiae aperiam nostrum ipsa debitis, quam ipsam alias.</p>
+                        <div class="w-75">
+                            @foreach($novel["writers"] as $key => $writer)
+                                <a href="#">{{$writer}}</a>
+                            @endforeach
+                        </div>
                     </div>
 
                 </div>
@@ -63,7 +71,11 @@
 
                     <div class="d-flex justify-content-between border-bottom align-items-center">
                         <span class="me-auto">On Sale Date:</span>
-                        <p class="w-50 m-0 py-2">{{date("m.d.y")}}</p>
+                        @php
+                            $date = date_create($novel["sale_date"]);
+                            //var_dump(date_format($date,"M d Y"))
+                        @endphp
+                        <p class="w-50 m-0 py-2">{{date_format($date,"M d Y")}}</p>
                     </div>
                 </div>
             </div>
